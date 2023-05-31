@@ -1,0 +1,282 @@
+{
+  "baseConfig": {
+    "prependRootPathToFiles": true
+  },
+  "states": [
+    {
+      "name": "Properties",
+      "path": "#/",
+      "exposed": true,
+      "default": true
+    },
+    {
+      "name": "LSCS",
+      "path": "#/lscs",
+      "exposed": true,
+      "default": false
+    }
+  ],
+  "properties": [
+    {
+      "id": "D001",
+      "type": "Boolean",
+      "name": "My Boolean",
+      "exposed": true,
+      "replicatable": false,
+      "value": true
+    },
+    {
+      "id": "D002",
+      "type": "CheckboxGroup",
+      "name": "My CheckboxGroup",
+      "option": [
+        {
+          "selected": true,
+          "display": "Link",
+          "value": "A"
+        },
+        {
+          "selected": false,
+          "display": "Label",
+          "value": "B"
+        },
+        {
+          "selected": false,
+          "display": "Format",
+          "value": "C"
+        }
+      ],
+      "exposed": true,
+      "replicatable": false
+    },
+    {
+      "id": "D003",
+      "type": "Color",
+      "name": "My Color",
+      "exposed": true,
+      "replicatable": false,
+      "value": "#F0CB09"
+    },
+    {
+      "id": "D004",
+      "type": "Rule",
+      "name": "My Rule",
+      "exposed": true,
+      "replicatable": false,
+      "option": []
+    },
+    {
+      "id": "D005",
+      "type": "Date",
+      "name": "My Date",
+      "date": {
+        "month": 1,
+        "day": 28,
+        "year": 2017,
+        "dayOfWeek": 0,
+        "showTime": true,
+        "hour": 1,
+        "minute": 59,
+        "amPm": "am"
+      },
+      "exposed": true,
+      "replicatable": false
+    },
+    {
+      "id": "D006",
+      "type": "DCR",
+      "name": "My DCR",
+      "exposed": true,
+      "replicatable": false,
+      "dcr": {
+        "category": "LiveSite",
+        "type": "Content"
+      }
+    },
+    {
+      "id": "D009",
+      "type": "File",
+      "name": "My File",
+      "exposed": true,
+      "replicatable": false,
+      "value": "$URL_PREFIX"
+    },
+    {
+      "id": "D010",
+      "type": "Font",
+      "name": "My Font",
+      "font": {
+        "size": "5px",
+        "family": "arial",
+        "style": "normal",
+        "weight": "normal",
+        "color": "#FF6633"
+      },
+      "exposed": true,
+      "replicatable": false
+    },
+    {
+      "id": "D011",
+      "type": "Image",
+      "name": "My Image",
+      "image": {
+        "width": 12,
+        "height": 36,
+        "path": "$URL_PREFIX",
+        "description": "This is the image description."
+      },
+      "exposed": true,
+      "replicatable": false
+    },
+    {
+      "id": "D012",
+      "type": "Number",
+      "name": "My Number",
+      "min": -1,
+      "max": 40,
+      "exposed": true,
+      "replicatable": false,
+      "value": 42
+    },
+    {
+      "id": "D013",
+      "type": "PageLink",
+      "name": "My PageLink",
+      "exposed": true,
+      "replicatable": false
+    },
+    {
+      "id": "D014",
+      "type": "RadioGroup",
+      "name": "My RadioGroup",
+      "min": -1,
+      "max": 40,
+      "option": [
+        {
+          "selected": true,
+          "display": "My Link",
+          "value": "001"
+        },
+        {
+          "selected": false,
+          "display": "My Label",
+          "value": "002"
+        }
+      ],
+      "exposed": true,
+      "replicatable": false
+    },
+    {
+      "id": "D015",
+      "type": "SelectMultiple",
+      "name": "My SelectMultiple",
+      "min": -1,
+      "max": 40,
+      "option": [
+        {
+          "selected": true,
+          "order": 1,
+          "display": "My Link",
+          "value": "001"
+        },
+        {
+          "selected": true,
+          "order": 2,
+          "display": "My Label",
+          "value": "002"
+        }
+      ],
+      "exposed": true,
+      "replicatable": false
+    },
+    {
+      "id": "D016",
+      "type": "SelectSingle",
+      "name": "My SelectSingle",
+      "min": -1,
+      "max": 40,
+      "option": [
+        {
+          "selected": true,
+          "display": "My Link",
+          "value": "001"
+        },
+        {
+          "selected": false,
+          "display": "My Label",
+          "value": "002"
+        }
+      ],
+      "exposed": true,
+      "replicatable": false
+    },
+    {
+      "id": "D017",
+      "type": "String",
+      "name": "My String",
+      "min": -1,
+      "max": 40,
+      "mask": "regular expression",
+      "exposed": true,
+      "replicatable": false,
+      "value": "true"
+    },
+    {
+      "id": "D018",
+      "type": "Textarea",
+      "name": "My Textarea",
+      "min": -1,
+      "max": 40,
+      "mask": "regular expression",
+      "exposed": true,
+      "replicatable": false,
+      "value": "Content..."
+    },
+    {
+      "id": "G001",
+      "name": "Menu Option",
+      "type": "Group",
+      "properties": [
+        {
+          "id": "G001-D001",
+          "type": "Boolean",
+          "name": "My Boolean",
+          "exposed:": true,
+          "replicatable": false,
+          "value": true
+        },
+        {
+          "id": "G001-D003",
+          "type": "Color",
+          "name": "My Color",
+          "exposed": true,
+          "replicatable": false,
+          "value": "#F0CB09"
+        }
+      ]
+    },
+    {
+      "id": "G002",
+      "name": "Menu Option",
+      "type": "Group",
+      "properties": [
+        {
+          "id": "G002-D001",
+          "type": "Boolean",
+          "name": "My Boolean",
+          "exposed": true,
+          "replicatable": false,
+          "value": true
+        },
+        {
+          "id": "G002-D003",
+          "type": "Color",
+          "name": "My Color",
+          "exposed": true,
+          "replicatable": false,
+          "value": "#F0CB09"
+        }
+      ]
+    }
+  ]
+}

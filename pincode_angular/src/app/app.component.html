@@ -1,0 +1,32 @@
+<div data-app-id="$CONTEXT{componentId}" class="pincode-angular-container" id="pincode-angular-container">
+  <div class="grid">
+      <div class="made">
+        <a class="d-block d-sm-inline-block py-1 px-3 text-decoration-none rounded-3 hero-notice">
+            Built with <strong>Angular</strong>
+        </a>
+      </div>
+      <div>
+          <div class="title_pincode animate__animated animate__fadeInDown">
+            <div class="icon"><i class="bi bi-mailbox"></i></div>
+            <div data-in-context-edit="DT01"><div id="displayField" data-bind="title" [innerHTML]="title"></div></div>
+          </div>
+          <input type="text" maxlength="6" inputmode="numeric" placeholder="pincode" name="pincode" id="pincode" #pincode required>
+          <button class="search-btn" id="search-btn" type="submit" (click)="getPinCodeResults(pincode.value)"><i class="bi bi-search"></i> Search</button>
+      </div>
+      <div class="hint" title="hint">Enter a 6 digit pincode (e.g. 500049)</div>
+      <div>
+          <ul class="list-group animate__animated animate__fadeIn" id="searchResults" *ngIf="pincode.value.length > 0">
+            <ng-container *ngIf="success else noResultsFound">
+              <li class='list-group-item list-group-item-dark'>Post Office: {{po.Name | json}}</li>
+              <li class='list-group-item list-group-item-dark'>District: {{po.District | json}}</li>
+              <li class='list-group-item list-group-item-dark'>State: {{po.State | json}}</li>
+            </ng-container>
+            <ng-template #noResultsFound>
+              <ul class="list-group animate__animated animate__fadeIn" id="searchResults" >
+                <li class='list-group-item list-group-item-dark'>No Results Found</li>
+              </ul>
+            </ng-template>
+          </ul>
+      </div>
+  </div>
+</div>

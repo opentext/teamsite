@@ -1,0 +1,84 @@
+.pincode-vanilla-container {
+  font-family: 'Poppins', sans-serif;
+  background-image: radial-gradient(circle, #495057 1px, rgba(0, 0, 0, 0) 1px);
+  background-color: #2b3035;
+  background-size: 1rem 1rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pincode-vanilla-container div.grid {
+  display: grid;
+  gap: 1em;
+}
+.pincode-vanilla-container div.title_pincode {
+  color: white;
+  font-size: 2.6rem;
+  font-weight: 600;
+  display: grid;
+  grid-auto-flow: column;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.pincode-vanilla-container h1 {
+  color: white;
+  font-size: 2rem;
+}
+.pincode-vanilla-container div.hint {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+.pincode-vanilla-container div.made a.hero-notice {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(74, 82, 91, 0.2);
+  border: 1px solid #495057;
+}
+.pincode-vanilla-container div.made a.hero-notice:hover {
+  background-color: #f7e018;
+  color: black;
+  -webkit-box-shadow: 2px 5px 24px 0px rgba(247, 224, 24, 0.3);
+  -moz-box-shadow: 2px 5px 24px 0px rgba(247, 224, 24, 0.3);
+  box-shadow: 2px 5px 24px 0px rgba(247, 224, 24, 0.3);
+}
+.pincode-vanilla-container button.search-btn {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #712cf9;
+  color: white;
+  margin-left: 1em;
+}
+.pincode-vanilla-container button.search-btn:hover {
+  -webkit-box-shadow: 2px 5px 24px 0px #712cf9;
+  -moz-box-shadow: 2px 5px 24px 0px #712cf9;
+  box-shadow: 2px 5px 24px 0px #712cf9;
+}
+.pincode-vanilla-container input[type="text"] {
+  border: none;
+  height: 2.6rem;
+  width: 25rem;
+  border-radius: 0.25rem;
+}
+.pincode-vanilla-container .list-group-item {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  border: 0px solid grey;
+  border-bottom: 1px solid grey;
+}
+.pincode-vanilla-container .list-group-item:hover {
+  background-color: #000000;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.pincode-vanilla-container div#norecords {
+  position: fixed !important;
+  bottom: 1em;
+  left: 33%;
+  color: black;
+  background-color: white;
+  width: 33rem;
+  border-radius: 2em;
+}
