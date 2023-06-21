@@ -1,0 +1,101 @@
+#header {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  background: #00b6e3;
+  display: table;
+}
+#header h1 {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
+#navigation {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  border-bottom: 1px solid rgba(73, 73, 73, 0.1);
+  padding-bottom: 0.2em;
+}
+#navigation ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  box-shadow: 2px 2px 5px rgba(73, 73, 73, 0.3);
+}
+#navigation ul li {
+  height: 100%;
+}
+#navigation ul li a {
+  height: 100%;
+  padding: 1em 3em;
+  display: inline-block;
+  transition: all 300ms ease-in-out;
+  line-height: inherit;
+  color: #4c68ff;
+}
+#navigation ul li a:hover {
+  background-color: #4c68ff;
+  color: #fff !important;
+}
+#navigation.fixed {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.App {
+  text-align: center;
+}
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  position: fixed;
+  top: 20px;
+  right: 50px;
+  transform: scale(4);
+  clip-path: content-box;
+  opacity: 0.25;
+}
+.App-header {
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  color: #000000;
+  z-index: 5;
+  border-bottom: 1px solid rgba(73, 73, 73, 0.1);
+  margin-bottom: 0.1em;
+}
+.App-header h2 {
+  background-image: linear-gradient(90deg, #4c68ff, rgba(2, 165, 194, 0.7));
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.App-intro {
+  font-size: large;
+  z-index: 1;
+}
+.active {
+  background-color: #4c68ff;
+  color: #fff !important;
+}
+@media screen and (min-width: 1200px) {
+  .App-header {
+    font-size: 1.5rem;
+  }
+}
